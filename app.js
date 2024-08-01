@@ -1,12 +1,8 @@
-var userInput;
-var userName;
-userInput = 5;
-userInput = "Max";
-if (typeof userInput === "string") {
-    userName = userInput;
-}
-function generateError(message, code) {
-    throw { message: message, errorCode: code };
-}
-var result = generateError("An error occurred!", 500);
-console.log(result);
+var Department = /** @class */ (function () {
+    function Department(n) {
+        this.name = n;
+    }
+    return Department;
+}());
+var accounting = new Department("Accounting");
+console.log(accounting);
